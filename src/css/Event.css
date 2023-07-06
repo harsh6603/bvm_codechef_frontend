@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: 5%; */
+}
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+} */
+
+/* body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+} */
+
+.clg_event_heading {
+    height: 50px;
+    width: 100%;
+    background-color: #5252db;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.home-btn {
+    float: left;
+    font-size: large;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #fff;
+    color: #3363ff;
+    border: 2px dotted #3363ff;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TAKE OBJECT FAR FROM PERSPECTIVE VIEW */
+.card {
+    /* background-color: #0000aa; */
+    /* perspective: 1000px; */
+    /* width: 25rem; */
+    max-width: 400px;
+    height: 530px;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    overflow: hidden;
+    /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    align-self: normal;
+}
+
+/* SET SAME COLUMN AND ROW FOR BOTH CARD */
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+
+.card-front {
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    grid-area: 1 / 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+#teams-icon {
+    height: 15px;
+    width: 15px;
+}
+
+/* FIX CARD IMAGES WIDTH */
+.card-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card:hover .card-container {
+    transform: rotateY(180deg);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 5px;
+    text-align: start;
+}
+
+.card-header {
+    font-size: 25px;
+    padding-top: 3%;
+    font-weight: 500;
+    /* color: #0d0d0d; */
+    margin-bottom: 2%;
+    /* background-color: white; */
+    border: 0;
+}
+
+.disc {
+    font-size: 25px;
+    font-weight: 500;
+    /* color: #0d0d0d; */
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.card-text {
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 8%;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    /* color: #3d3d3d; */
+    margin-bottom: 2%;
+}
+
+.card-text-back {
+    /* height: 80%; */
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    padding: 2%;
+    letter-spacing: 0;
+    line-height: 1.77;
+    /* color: #3d3d3d; */
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    white-space: pre-line 
+}
+
+/* .card-btn {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;    
+} */
+
+
+.card-btn {
+    position: absolute;
+    bottom: 13px;
+    display: block;    
+    padding: 3px;
+    width: 95%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 7px;
+    color: black;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    visibility: visible; 
+    transition: visibility 0.3s;
+}
+
+.card:hover .card-btn{    
+    visibility: hidden;    
+    transition: visibility 0.3s;
+}
+
+.card-btn-back {
+    margin-top: 0;
+    margin-left: 7px;
+    margin-bottom: 13px;
+    display: block;
+    width: 95%;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0px;
+}
+
+.card-btn span {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 0.2s;
+}
+
+/* .card-btn-back:hover,
+.card-btn-back:active {
+    background-color: black;
+} */
+
+.card-btn-back:hover span,
+.card-btn-back:active span {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+/* .footer {
+    width: 100vw;
+} */
+
+.footer_info {
+    font-size: 20px;
+    height: 34px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #5252db;
+
+}
+
+.copyright_info {
+    height: 27px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.418);
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    background-color: black;
+}
+
+.icons {
+    position: absolute;
+    left: 83%;
+    top: 3%;
+    width: 15%;
+}
+
+.card-front .upcomingEvent{
+    position:absolute;
+    background: linear-gradient(179.1deg, rgb(43 170 96 / 84%) 2.3%, rgb(129 204 104 / 65%) 98.3%);
+    width: 100%;
+    height: 30px;
+    color: white;   
+    visibility: visible; 
+    transition: visibility 0.3s;    
+}
+
+.card:hover .upcomingEvent{    
+    visibility: hidden;    
+}
+
+@media only screen and (max-width: 60em) {
+    /* body {
+      padding: 3rem;
+    } */
+
+    .grid {
+        grid-gap: 3rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .card {
+        height: 600px;
+    }
+    .card-text-back{
+        height: auto;
+        /* line-height: 1.5; */
+        -webkit-line-clamp: 14;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px)
+{
+    .card {
+        /* background-color: #0000aa; */
+        /* perspective: 1000px; */
+        width: 215px;
+        max-width: 350px;
+        height: 485px;
+        border-radius: 0.4rem;
+        margin-bottom: 10%;
+        background-color: #fff;
+        overflow: hidden;
+        /* box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%); */
+        cursor: pointer;
+        align-self: normal;
+    }
+    .card-text-back{
+        font-size: 16px;
+        height: auto;
+        line-height: 1.7;
+        -webkit-line-clamp: 14;
+    }   
+}

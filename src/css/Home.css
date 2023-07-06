@@ -1,0 +1,55 @@
+.setHome{
+    padding-top: 5%;
+}
+
+.modal-body{
+    background-color: #ffe4d9;
+}
+
+.inputFeild{
+    width:100%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    padding: 0;
+}
+
+input:focus{
+    border:0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+label{
+    display: flex;
+    padding-bottom: 6%;
+}
+
+.both{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 6% 5%;
+    margin: 3% 0;
+}
+
+@media only screen and (max-width:500px)
+{
+    .setHome{
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .setHome{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }    
+
+    
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 32%;        
+    }
+}

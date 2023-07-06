@@ -1,0 +1,121 @@
+.setQuestion {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.solutionMargin {
+    padding-top: 5%;
+}
+
+.questionTable {
+    padding-top: 8%;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    padding: 1%;
+}
+
+thead {
+    border: 3px solid lightslategrey;
+}
+
+tr {
+    border: 1px solid rgb(239, 239, 239);
+    border-left: 2px solid rgb(239, 239, 239);
+    border-right: 2px solid rgb(239, 239, 239);
+    border-collapse: collapse;
+}
+
+.th-white {
+    background-color: slategray;
+    color: white;
+    padding: 1% 0.5rem;
+}
+
+.th-dark {
+    background-color: slategray;
+    color: white;
+    padding: 1% 0.5rem;
+}
+
+td {
+    padding: 1% 0.5rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.question {
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+.question-dark {
+    text-decoration: underline;
+    color: lightsteelblue;
+}
+
+.question:hover {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+.question-dark:hover {
+    text-decoration: none;
+    color: lightsteelblue;
+}
+
+.styleModal {
+    /* width: 50%; */
+    top:50%;
+    left:50%;
+    right:auto;
+    bottom:auto;
+    margin-right:-50%;
+    width:500px;
+    transform:translate(-50%, -50%)  
+}
+
+.modalBtn{
+    font-size: 40px;
+    padding: 0;
+    position: absolute;
+    right: 5%;
+    top: 0%;
+}
+
+.errorMessage{
+    position: absolute;
+    color: red;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width:500px) {
+    .questionTable {
+        padding-top: 25%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .setQuestion{
+        height: 100vh;
+    }
+    table {
+        width: 100%;
+    }
+}

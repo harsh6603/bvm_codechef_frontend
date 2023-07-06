@@ -1,0 +1,68 @@
+.login {
+    background-image: linear-gradient(rgba(65, 65, 65, 0.78), rgba(0, 0, 0, 0.779));
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginBox {
+    border: 1px solid #0000002d;
+    border-radius: 8px;
+    /* height: 166px; */
+    overflow: visible;
+}
+
+.setPadding {
+    margin: auto;
+    padding-top: 12%;
+    max-width: 400px;
+}
+
+.setPaddingSignUp {
+    margin: auto;
+    padding-top: 10%;
+    max-width: 400px;
+}
+
+.boxColor {
+    background: inherit;
+    backdrop-filter: blur(20px);
+    color: white;    
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-color: inherit;
+    background-clip: padding-box;
+    border: 0;
+    border-bottom: 1px solid blanchedalmond;
+    outline: none;
+}
+
+.form-control2:focus{
+    border-bottom: 1px solid blanchedalmond;
+}
+
+.signupLink{
+    color: rgb(93, 154, 224);
+}
+
+@media(max-width:500px) {
+    .setPadding {
+        margin: auto;
+        padding-top: 55%;
+        max-width: 400px;
+    }
+
+    .setPaddingSignUp {
+        margin: auto;
+        padding-top: 45%;
+        max-width: 400px;
+    }
+}

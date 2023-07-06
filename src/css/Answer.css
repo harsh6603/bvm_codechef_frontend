@@ -1,0 +1,87 @@
+.setAnswer{
+    padding-top:5%;
+    padding-bottom: 3%;
+}
+.answer{
+    text-align: left;
+}
+.page-link{
+    color: black;
+}
+.page-link:hover{
+    color: black;
+}
+.select{
+    background-color: gainsboro;
+    color: black;
+    z-index: 0;
+}
+.select-dark{
+    background-color: dimgray;
+    color: white;
+}
+
+.select:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.select-dark:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.testcase{
+    background-color: ghostwhite;
+    padding: 1%;
+}
+
+.testcase-dark{
+    background-color: #404040;
+    padding: 1%;
+}
+
+.parentDiv{
+    position:relative;    
+}
+
+.copyButton{
+    position: absolute;
+    right:14px;
+    top:8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.copyButtonTestCase{
+    position: absolute;
+    right:20px;
+    top:45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.commingSoon{
+    text-align: left;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width:500px)
+{
+    .setAnswer {
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .setAnswer {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}

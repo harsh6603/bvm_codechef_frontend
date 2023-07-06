@@ -1,0 +1,26 @@
+.commingsoon
+{
+    height: 100vh;    
+}
+
+.commingsoonImage{
+    width: 50%;
+    height: auto;
+    padding-top: 6%;
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px)
+{
+    .commingsoonImage {
+        width: 90%;        
+        padding-top: 40%;
+    }
+}
+
+@media(max-width:500px)
+{
+    .commingsoonImage {
+        width: 90%;        
+        padding-top: 50%;
+    }
+}

@@ -1,0 +1,171 @@
+#footer123 {
+    padding: 60px;
+    background-color: rgb(29, 54, 111);
+    color: aliceblue;
+}
+
+.Footer1234 {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.Footer12344 {
+    display: flex;
+}
+
+.Footer12345 {
+    margin-top: 50px;
+    /* text-align: left; */
+    text-align: justify;
+}
+
+.Footer12345 h5 {
+    margin-bottom: 30px;
+}
+
+.Footer98 {
+    margin-left: 40%;
+}
+
+.Footer98 p {
+    margin-top: 22px;
+}
+
+.Footer98 p a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* .Footer99 {
+    margin-left:20px ;
+} */
+.Footer99 p {
+    padding-top: 30px;
+}
+
+.icon12 {
+    color: aliceblue;
+}
+
+.Footer99 h5 {
+    padding-left: 30px;
+}
+
+.Footer99 p a {
+    padding-left: 30px;
+}
+
+.ulTag {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.linksColumn {
+    text-align: left;
+    padding-left: 6%;
+}
+
+.setLinks {
+    color: black;
+    text-decoration: none;
+}
+
+.setLinks:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.setPaddingList {
+    padding-left: 30%;
+    padding-top: 4%;
+}
+
+.arrangeTitle {
+    padding-left: 30%;
+}
+
+.footer_info {
+    font-size: 18px;
+    height: 35px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    background-color: whitesmoke;
+
+}
+
+.copyright_info {
+    height: 40px;
+    color:white;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer123 {
+        padding: 40px;
+    }
+
+    .Footer12345 {
+        margin-top: 30px;
+    }
+
+    .Footer12345 h5 {
+        margin-bottom: 20px;
+    }
+
+    .Footer98 {
+        margin-left: 20%;
+    }
+
+    .Footer99 {
+        padding-left: 1%;
+        text-align: left;
+    }
+
+    .Footer99 h5 {
+        padding-left: 0px;
+    }
+
+    .Footer99 p {
+        padding-left: 0%;
+    }
+
+    .Footer99 p a {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .icon12 {
+        padding-bottom: 10px;
+    }
+
+    .linksColumn {
+        text-align: left;
+        padding-left: 4%;
+    }
+
+    .setPaddingList {
+        padding-left: 0%;
+        padding-top: 4%;
+    }
+
+    .arrangeTitle {
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {    
+    /* .footer{
+        margin-top:5%;
+    } */
+}

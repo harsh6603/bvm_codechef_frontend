@@ -1,0 +1,158 @@
+.darkThemeGeneral {
+    background-color: black;
+}
+
+.lightThemeGeneral {
+    background-color: white;
+}
+
+/* dark theme for write  */
+.darkThemeSpecial {
+    background-color: #242526;
+    color: white;
+}
+
+/* light theme for write  */
+.lightThemeSpecial {
+    background-color: white;
+}
+
+#home{
+    height:100vh;
+}
+
+.main-div{
+    padding-top:15%;
+}
+
+.sub-div1{
+    margin-top: 3%;
+    padding-right: 10%;
+}
+
+.sub-div2{
+    max-width: 34%;
+    margin-top: -3%;
+}
+
+.images{
+    height: 100%;
+    width: 70%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+.styleLine1{
+    font-size:55px;
+}
+
+.styleLine2{
+    font-size: 19px;
+    margin-bottom: 5%;
+}
+
+.joinBtn{
+    margin-top: 2%;
+    padding: 2% 8%;
+    font-size: 18px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.joinDarkBtn{
+    margin-top: 2%;
+    padding: 2% 8%;
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.joinBtn:hover{
+    /* background-color: white; */
+    background-color: #cbc9c9;
+    color: black;
+    /* font-size: 18px; */
+}
+
+.joinDarkBtn:hover{
+    background-color: #a9a7a7;
+    color: white;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@media only screen and (max-width:500px)
+{
+    #home{
+        height:100vh;
+    }
+
+    .main-div{
+        padding-top:15%;
+        flex-direction: column;
+    }    
+    
+    .sub-div1{
+        margin-top: 10%;
+        padding-right: 0%;
+    }
+    
+    .sub-div2{
+        max-width: 100%;
+        margin-top: 0%;
+        padding-top: 10%;
+    }
+    
+    .images{
+        height: 100%;
+        width: 70%;
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+    }
+    
+    .styleLine1{
+        padding-top: 10%;
+        font-size:35px;
+    }
+    
+    .styleLine2{
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px){
+    #home{
+        height:35vh;
+    }
+
+    .sub-div1 {
+        margin-top: 3%;
+        padding-right: 6%;
+    }
+
+    .sub-div2 {
+        max-width: 35%;
+        margin-top: 0%;
+    }
+    .styleLine1 {
+        font-size: 45px;
+    }
+
+    .styleLine2 {
+        font-size: 21px;
+        margin-bottom: 5%;
+    }
+}
